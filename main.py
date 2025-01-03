@@ -18,8 +18,7 @@ def save_email(email):
     with open("mails.txt", "a") as file:
         file.write(email + "\n")
 
-<<<<<<< HEAD
-with st.sidebar:
+# with st.sidebar:
     # st.write("Official demo for [Scrapegraph-ai](https://github.com/VinciGit00/Scrapegraph-ai) library")
     # st.markdown("""---""")
     # st.write("# Usage Examples")
@@ -36,10 +35,9 @@ with st.sidebar:
     # st.markdown("""---""")
     # st.write("Follow our [Github page](https://github.com/ScrapeGraphAI)")
 
-=======
->>>>>>> f29e80f (hide)
 
-    st.title("BrandVault360 Scraper")
+
+st.title("BrandVault360 Scraper")
 left_co, cent_co, last_co = st.columns(3)
 with cent_co:
     # st.image("assets/scrapegraphai_logo.png")
