@@ -94,15 +94,15 @@ if st.button('Scrape'):
 
 left_co2, *_, cent_co2, last_co2, last_c3 = st.columns([1] * 18)
 
-with cent_co2:
-    discord_link = "https://discord.com/invite/gkxQDAjfeX"
-    discord_logo = base64.b64encode(open("assets/discord.png", "rb").read()).decode()
-    st.markdown(
-        f"""<a href="{discord_link}" target="_blank">
-        <img src="data:image/png;base64,{discord_logo}" width="25">
-        </a>""",
-        unsafe_allow_html=True,
-    )
+# with cent_co2:
+#     discord_link = "https://discord.com/invite/gkxQDAjfeX"
+#     discord_logo = base64.b64encode(open("assets/discord.png", "rb").read()).decode()
+#     st.markdown(
+#         f"""<a href="{discord_link}" target="_blank">
+#         <img src="data:image/png;base64,{discord_logo}" width="25">
+#         </a>""",
+#         unsafe_allow_html=True,
+#     )
 
 # with last_co2:
 #     github_link = "https://github.com/VinciGit00/Scrapegraph-ai"
