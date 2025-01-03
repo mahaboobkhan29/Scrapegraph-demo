@@ -9,7 +9,7 @@ from helper import (
     add_download_options
 )
 
-st.set_page_config(page_title="Scrapegraph-ai demo", page_icon="🕷️")
+st.set_page_config(page_title="BrandVault360 Scraper")
 
 # Install playwright browsers
 playwright_install()
@@ -19,7 +19,7 @@ def save_email(email):
         file.write(email + "\n")
 
 with st.sidebar:
-    st.write("Official demo for [Scrapegraph-ai](https://github.com/VinciGit00/Scrapegraph-ai) library")
+    # st.write("Official demo for [Scrapegraph-ai](https://github.com/VinciGit00/Scrapegraph-ai) library")
     st.markdown("""---""")
     st.write("# Usage Examples")
     st.write("## Prompt 1")
@@ -33,15 +33,15 @@ with st.sidebar:
     st.markdown("""---""")
     st.write("You want to suggest tips or improvements? Contact me through email to mvincig11@gmail.com")
     st.markdown("""---""")
-    st.write("Follow our [Github page](https://github.com/ScrapeGraphAI)")
+    # st.write("Follow our [Github page](https://github.com/ScrapeGraphAI)")
 
 
-st.title("Scrapegraph-ai")
+st.title("BrandVault360 Scraper")
 left_co, cent_co, last_co = st.columns(3)
 with cent_co:
-    st.image("assets/scrapegraphai_logo.png")
-st.title('Scrapegraph-api')
-st.write("### Refill at this page [Github page](https://scrapegraphai.com)")
+    # st.image("assets/scrapegraphai_logo.png")
+    st.title('BrandVault360 Scraper')
+# st.write("### Refill at this page [Github page](https://scrapegraphai.com)")
 
 # Get the API key, URL, prompt, and optional schema from the user
 api_key = st.text_input('Enter your API key:', type="password")
@@ -104,22 +104,22 @@ with cent_co2:
         unsafe_allow_html=True,
     )
 
-with last_co2:
-    github_link = "https://github.com/VinciGit00/Scrapegraph-ai"
-    github_logo = base64.b64encode(open("assets/github.png", "rb").read()).decode()
-    st.markdown(
-        f"""<a href="{github_link}" target="_blank">
-        <img src="data:image/png;base64,{github_logo}" width="25">
-        </a>""",
-        unsafe_allow_html=True,
-    )
+# with last_co2:
+#     github_link = "https://github.com/VinciGit00/Scrapegraph-ai"
+#     github_logo = base64.b64encode(open("assets/github.png", "rb").read()).decode()
+#     st.markdown(
+#         f"""<a href="{github_link}" target="_blank">
+#         <img src="data:image/png;base64,{github_logo}" width="25">
+#         </a>""",
+#         unsafe_allow_html=True,
+#     )
 
-with last_c3:
-    twitter_link = "https://twitter.com/scrapegraphai"
-    twitter_logo = base64.b64encode(open("assets/twitter.png", "rb").read()).decode()
-    st.markdown(
-        f"""<a href="{twitter_link}" target="_blank">
-        <img src="data:image/png;base64,{twitter_logo}" width="25">
-        </a>""",
-        unsafe_allow_html=True,
-    )
+# with last_c3:
+#     twitter_link = "https://twitter.com/scrapegraphai"
+#     twitter_logo = base64.b64encode(open("assets/twitter.png", "rb").read()).decode()
+#     st.markdown(
+#         f"""<a href="{twitter_link}" target="_blank">
+#         <img src="data:image/png;base64,{twitter_logo}" width="25">
+#         </a>""",
+#         unsafe_allow_html=True,
+#     )
