@@ -39,13 +39,13 @@ def save_email(email):
 
 st.title("BrandVault360 Scraper")
 left_co, cent_co, last_co = st.columns(3)
-with cent_co:
+# with cent_co:
     # st.image("assets/scrapegraphai_logo.png")
     # st.title('BrandVault360 Scraper')   
 # st.write("### Refill at this page [Github page](https://scrapegraphai.com)")
 
 # Get the API key, URL, prompt, and optional schema from the user
-    api_key = st.text_input('Enter your API key:', type="password")
+api_key = st.text_input('Enter your API key:', type="password")
 url = st.text_input('Enter the URL to scrape:')
 prompt = st.text_input('Enter your prompt:')
 schema = st.text_input('Enter your optional schema (leave blank if not needed):')
